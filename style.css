@@ -1,0 +1,121 @@
+body{
+    /* background-color: #111; */
+}
+.side-nav{
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+.side-nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    height: 50px;
+    display: block;
+    position: relative;
+    padding: 3em 0;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .side-nav a i{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .side-nav a:hover {
+   background-color: gray;
+   color: black;
+  }
+
+  /*main_content class */
+  #main_content header> h1, p{
+      text-align: center;
+      text-transform: uppercase;
+      color: #111;
+  }
+  h1,hr{
+      margin-left: 150px;
+      text-transform: uppercase;
+  }
+
+  /*about me section*/
+  #about {
+    display: flex ;
+    /* background-color: #111; */
+    width: 100%;
+    color: white;
+  }
+  #about div{
+      width: 50%;
+      margin-top: 20px;
+  }
+  #about div p{
+    float: right
+  }
+  #about div img{
+      margin-left: 100px;
+      margin-top: 2px;   
+      margin-bottom: 5px;
+  }
+  #about .fa{
+    color: blue;
+  }
+  /*photos section*/
+  #photos{
+    display: flex;
+    background-color: #111;
+    width: 100%;
+  }
+
+  /*contact section*/
+
+  #contact{
+    display: block;
+  }
+  #contact div{
+   width: 100%;
+   
+   
+  }
+   #contact div p{
+     margin-left: -100px;
+   }
+   
+  
+   input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 140px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 200px;
+    margin-left: 140px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
