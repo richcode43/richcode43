@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function divide(num){
+                let num = 6;
+                for(i = 1; i <= num.length; i++){
+                    if(num[i] % 2 == 0){
+                        console.log("yu");
+                    }
+                    if(num[i] % 3 == 0){
+                        console.log("gi");
+                    }
+                    if(num[i] % 5 == 0){
+                        console.log("oh");
+                    }
+                    if(num[i] % 2 == 0 && num[i] % 3 == 0){
+                         console.log("yu" + "-" + "gi");
+                    }
+                    if(num[i] % 2 == 0 && num[i] % 5 == 0){
+                        console.log("yu" + "-" + "oh");
+                    }
+                    if(num[i] % 3 == 0 && num[i] % 5 == 0){
+                        console.log("gi" + "-" + "oh");
+                    }
+                    if(num[i] % 2 == 0 && num[i] % 3 == 0 && num[i] % 5 == 0 ){
+                        console.log("yu" + "-" + "gi" + "-" + "oh");
+                    }
+                    else{
+                        console.log(num[i]);
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+</html>
+
+
