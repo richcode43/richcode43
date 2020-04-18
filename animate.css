@@ -1,0 +1,38 @@
+
+h2 p{
+    color: blue; 
+    font-family: "Courier";
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    margin-left: 250px;
+    margin-top: -200px;
+    animation: type 4s steps(60, end)infinite; 
+  }
+  /* p:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }   */
+  .blinker{
+    animation: blink 1.5s infinite;
+    color: black;
+  }
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  /* ::selection{
+    background: black;
+  } */
