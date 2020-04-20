@@ -7,37 +7,41 @@
     </head>
     <body>
         <script>
-            function divide(num){
-                let num = 6;
-                for(i = 1; i <= num.length; i++){
-                    if(num[i] % 2 == 0){
-                        console.log("yu");
+        var output = [];
+        function isDivisible(num){
+            for(i = 0; i <= num; i++ ){
+                output.push(i);
+                if(output[i]%2 == 0){
+                    if(output[i]%2 == 0 && output[i]%3 == 0){
+                        output[i] = "yu-gi";
                     }
-                    if(num[i] % 3 == 0){
-                        console.log("gi");
+                    else if(output[i]%2 == 0 && output[i]%5 == 0){
+                        output[i] = "yu-oh";
                     }
-                    if(num[i] % 5 == 0){
-                        console.log("oh");
-                    }
-                    if(num[i] % 2 == 0 && num[i] % 3 == 0){
-                         console.log("yu" + "-" + "gi");
-                    }
-                    if(num[i] % 2 == 0 && num[i] % 5 == 0){
-                        console.log("yu" + "-" + "oh");
-                    }
-                    if(num[i] % 3 == 0 && num[i] % 5 == 0){
-                        console.log("gi" + "-" + "oh");
-                    }
-                    if(num[i] % 2 == 0 && num[i] % 3 == 0 && num[i] % 5 == 0 ){
-                        console.log("yu" + "-" + "gi" + "-" + "oh");
+                    else if(output[i]%2 == 0 && output[i]%3 == 0 && output[i]%5 == 0){
+                        output[i] = "yu-gi-oh";
                     }
                     else{
-                        console.log(num[i]);
+                        output[i] = "yu";
                     }
                 }
+                else if(output[i]%3 == 0){
+                    if(output[i]%3 == 0 && output[i]%5 == 0){
+                        output[i] = "gi-oh";
+                    }
+                    else{
+                        output[i] = "gi";
+                    }
+                }
+                else if(output[i]%5 == 0){
+                    output[i] = "oh";
+                }
             }
-            
-        </script>
+            output.shift()
+            console.log(output);
+        }
+        isDivisible(6);
+    </script>
     </body>
 </html>
 
